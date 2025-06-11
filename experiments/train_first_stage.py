@@ -14,7 +14,7 @@ Configs
 '''
 class CFG:
     EXPERIMENT_NAME = 'train_first_stage'
-    MODEL_PATH = 'deepseek-ai/DeepSeek-R1-Distill-Qwen-14B'
+    MODEL_PATH = 'deepseek-ai/DeepSeek-R1-Distill-Qwen-7B'
     DEBUG = False
     SEED = 2025
     # SFT settings
