@@ -18,7 +18,7 @@ Configs
 '''
 class CFG:
     EXPERIMENT_NAME = 'train_second_stage'
-    MODEL_PATH = 'ft_models/train_first_stage/checkpoint-350'
+    MODEL_PATH = 'sft_models/train_first_stage/checkpoint-350'
     DEBUG = False
     SEED = 2025
     # GRPO settings
@@ -127,7 +127,7 @@ def create_prompt(sample):
 
 
 if __name__ == "__main__":
-    dataset = load_dataset('RabotniKuma/Fast-Math-R1-GRPO')['train']
+    dataset = load_dataset('sky/Fast-R1-GRPO')['train']
     dataset = dataset.map(create_prompt)
 
     training_args.model_init_kwargs = dict(
